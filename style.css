@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(header.jpg);
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+    margin-left: 40px;
+    margin-top: -2px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid blue;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-right: 60px;
+    background: blue;
+    border-radius: 8px;
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+.sec-text{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.sec-text span{
+    letter-spacing: 5px;
+}
+.sec-text h1{
+    font-size: 3.5rem;
+}
+.sec-text a{
+    text-decoration: none;
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
+.sec-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+footer{
+    background: url(footer.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+footer h1{
+    color: white;
+    font-size: 2rem;
+}
